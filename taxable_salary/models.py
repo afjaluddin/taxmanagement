@@ -4,6 +4,7 @@ from information_salary .models import InformationSalary
 
 # Create your models here.
 
+
 class TaxableSalary(models.Model):
     name = models.ForeignKey(InformationAssessee, on_delete=models.CASCADE, blank=False)
     basic = models.IntegerField(blank=True, null=True)
